@@ -7,9 +7,9 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <div class="logoimage hidden-xs">
-          <h1 class="logoimage hidden-xs">See The Universe</h1>
-          <h2 class="logoimageunderline hidden-xs"><span>;</span></h2>
+      <div class="hidden-xs logotitle">
+          <h1 class="logoimage col-lg-12">See The Universe</h1>
+          <h2 class="logoimageunderline col-lg-12"><span>;</span></h2>
       </div>
       <a class="navbar-brand hidden-sm hidden-md hidden-lg" href="#">See The Universe</a>
     </div>
