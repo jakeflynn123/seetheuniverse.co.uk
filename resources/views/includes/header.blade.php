@@ -7,11 +7,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <div class="hidden-xs logotitle">
+      <div class="hidden-xs row">
           <h1 class="logoimage col-lg-12">See The Universe</h1>
           <h2 class="logoimageunderline col-lg-12"><span>;</span></h2>
       </div>
-      <a class="navbar-brand hidden-sm hidden-md hidden-lg" href="#">See The Universe</a>
+      <a class="navbar-brand hidden-sm hidden-md hidden-lg" href="/">See The Universe</a>
     </div>
         <div id="navbar" class="collapse navbar-collapse" >
             <ul class="nav navbar-nav">

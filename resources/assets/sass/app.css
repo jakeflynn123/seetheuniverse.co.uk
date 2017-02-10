@@ -1,21 +1,21 @@
 /*
 Error: File to import not found or unreadable: node_modules/bootstrap-sass/assets/stylesheets/bootstrap.
-        on line 11 of app.scss
+        on line 10 of app.scss
 
-6: @import "variables";
-7: $colour: #c2f0f0;
-8: $fontcolour: #4d4d4d;
-9: 
-10: // Bootstrap
-11: @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
-12: 
-13: html {
-14:     position: relative;
-15:     min-height: 100%;
-16: }
+5: @import "variables";
+6: $colour: #c2f0f0;
+7: $fontcolour: #4d4d4d;
+8: 
+9: // Bootstrap
+10: @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+11: 
+12: .containerarticle {
+13:   background-color: white;
+14:   border-radius: 3%;
+15: }
 
 Backtrace:
-app.scss:11
+app.scss:10
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/import_node.rb:67:in `rescue in import'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/import_node.rb:45:in `import'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/import_node.rb:28:in `imported_file'
@@ -58,4 +58,4 @@ app.scss:11
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: node_modules/bootstrap-sass/assets/stylesheets/bootstrap.\A         on line 11 of app.scss\A \A 6: @import \"variables\";\A 7: $colour: #c2f0f0;\A 8: $fontcolour: #4d4d4d;\A 9: \A 10: // Bootstrap\A 11: @import \"node_modules/bootstrap-sass/assets/stylesheets/bootstrap\";\A 12: \A 13: html {\A 14:     position: relative;\A 15:     min-height: 100%;\A 16: }"; }
+  content: "Error: File to import not found or unreadable: node_modules/bootstrap-sass/assets/stylesheets/bootstrap.\A         on line 10 of app.scss\A \A 5: @import \"variables\";\A 6: $colour: #c2f0f0;\A 7: $fontcolour: #4d4d4d;\A 8: \A 9: // Bootstrap\A 10: @import \"node_modules/bootstrap-sass/assets/stylesheets/bootstrap\";\A 11: \A 12: .containerarticle {\A 13:   background-color: white;\A 14:   border-radius: 3%;\A 15: }"; }
