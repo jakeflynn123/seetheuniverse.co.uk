@@ -141,6 +141,32 @@ margin-bottom: 0;
   border-radius: 5px;
 	box-shadow: 0 0 0 3px #fff, 0 0 0 5px #ddd, 0 0 0 10px #fff, 0 0 2px 10px #eee;
 }
+/*Hamburger Transition*/
+/*slows it down*/
+.navbar-toggle .icon-bar {
+    position: relative;
+    transition: all 500ms ease-in-out;
+}
+
+/*rotates the first line*/
+.navbar-toggle.active .icon-bar:nth-of-type(1) {
+    top: 6px;
+    transform: rotate(45deg);
+
+}
+
+/*makes middle line transparent*/
+.navbar-toggle.active .icon-bar:nth-of-type(2) {
+    background-color: transparent;
+}
+
+/*rotates third line to make a cross*/
+.navbar-toggle.active .icon-bar:nth-of-type(3) {
+    top: -6px;
+    transform: rotate(-45deg);
+}
+/*end of hamburger transition*/
+
 @media screen and (min-width: 769px){
 ul {
   padding-top: 60px;
@@ -192,4 +218,40 @@ ul {
     .footer {
         height: 40px;
     }
+}
+@media screen and (max-width: 253px) {
+      .navbar-default .navbar-brand {
+           font-size: 20px;
+       }
+}
+@media screen and (max-width: 221px) {
+      .navbar-default .navbar-brand {
+           font-size: 15px;
+       }
+}
+@media screen and (max-width: 189px) {
+      .navbar-default .navbar-brand {
+           font-size: 10px;
+       }
+}
+@media screen and (max-width: 500px) {
+  #me {
+    width: 250px;
+    height: 350px;
+    margin: 30px;
+  }
+}
+@media screen and (max-width: 339px) {
+  #me {
+    width: 165px;
+    height: 265px;
+    margin: 30px;
+  }
+}
+@media screen and (max-width: 267px) {
+  #me {
+    width: 135px;
+    height: 235px;
+    margin: 30px;
+  }
 }
