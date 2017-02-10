@@ -1,17 +1,19 @@
-<div class="navbar navbar-default navbar-static-top">
-    <div class="container">
-    <div class="logoimage">
-        <h1 class="logoimage">See The Universe</h1>
-        <h2 class="logoimageunderline"><span>;</span></h2>
+<nav class="navbar navbar-default navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="logoimage hidden-xs">
+          <h1 class="logoimage hidden-xs">See The Universe</h1>
+          <h2 class="logoimageunderline hidden-xs"><span>;</span></h2>
+      </div>
+      <a class="navbar-brand hidden-sm hidden-md hidden-lg" href="#">See The Universe</a>
     </div>
-        <div class="navbar-header">
-            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse" >
+        <div id="navbar" class="collapse navbar-collapse" >
             <ul class="nav navbar-nav">
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About Me</a></li>
@@ -21,4 +23,4 @@
             </ul>
         </div>
     </div>
-</div>
+</nav>
