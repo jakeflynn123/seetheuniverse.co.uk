@@ -12,6 +12,7 @@
         @include('includes.header')
     </header>
     <body>
+      <?php include_once("analyticstracking.php") ?>
 
     <div class="containerarticle container containershadow">
         <div class="row">
