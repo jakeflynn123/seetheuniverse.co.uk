@@ -24,7 +24,7 @@ html {
   min-height: 100%;
 }
 body {
-  font-family: cursive;
+  font-family: Apple Chancery, cursive;
   background-color: $colour;
   /* Margin bottom by footer height */
   margin-bottom: 100px;
@@ -86,16 +86,19 @@ h2 span {
 .logoimageunderline {
   text-align: center;
   font-size: 80px;
-  margin-top: 10px;
-  padding-left: 25px;
+  padding-left: 85px;
+  margin-bottom: 50px;
 
 }
 .logoimage {
   font-size: 150px;
   text-align: center;
-  margin-top: 10px;
-  padding-left: 25px;
+  margin-top: 50px;
+  padding-left: 55px;
   margin-bottom: 0;
+  font-family: 'Great Vibes', Helvetica, sans-serif;
+  color: $fontcolour;
+  text-shadow: 4px 4px 3px rgba(0,0,0,0.1);
 
 }
 

@@ -1,8 +1,10 @@
 @extends('layouts.master')
 
-@section('title', 'contact')
+@section('title', 'Contact Us')
 @section('content')
-<div class="col-lg-12">
-  <h1>Contact</h1>
-</div>
+  <div class="col-lg-12 noborder">
+    <div class="col-lg-12 border">
+      <h1>Contact Us</h1>
+    </div>
+  </div>
 @endsection
