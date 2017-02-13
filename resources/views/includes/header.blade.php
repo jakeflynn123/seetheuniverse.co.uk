@@ -17,7 +17,7 @@
             <ul class="nav navbar-nav">
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About Me</a></li>
-                <li><a href="/articles">Weekly Segments</a></li>
+                <li><a href="/segments">Weekly Segments</a></li>
                 <li><a href="/submit">Submit to Us</a></li>
                 <li><a href="/contact">Contact Us</a></li>
             </ul>

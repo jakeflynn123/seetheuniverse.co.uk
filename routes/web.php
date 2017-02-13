@@ -11,10 +11,12 @@
 |
 */
 
+/*Home route*/
 Route::get('/', function()
 {
     return view('home');
 });
+/*Accessible Pages*/
 Route::get('about', function()
 {
     return view('about');
@@ -23,11 +25,22 @@ Route::get('contact', function()
 {
     return view('contact');
 });
-Route::get('articles', function()
-{
-    return view('articles');
-});
 Route::get('submit', function()
 {
     return view('submit');
 });
+Route::resource('segments', 'SegmentController');
+
+Auth::routes();
+Route::get('/adminpage', 'HomeController@index');
+Route::group(['middleware' => 'auth'], function () {
+
+
+        /*Admin Pages*/
+        Route::resource('admin/articles', 'ArticleController');
+        Route::resource('admin/comments', 'CommentController');
+        Route::resource('admin/categories', 'CategoryController');
+        Route::resource('admin/users', 'UserController');
+        Route::resource('admin/roles', 'RoleController');
+        Route::resource('admin/permissions', 'PermissionController');
+    });
