@@ -31,6 +31,17 @@ Route::get('submit', function()
 });
 Route::resource('segments', 'SegmentController');
 
+Route::get('articles/{id}', function ($id) {
+    $articles = \App\article::where('id',$id)->first();
+
+
+    if(!$articles)
+    {
+        return redirect('articles/show');
+    }
+    return view('articles/show')->witharticles($articles);
+});
+
 Auth::routes();
 Route::get('/adminpage', 'HomeController@index');
 Route::group(['middleware' => 'auth'], function () {

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\categories;
 use Illuminate\Http\Request;
 use App\article;
 use App\comments;
@@ -15,9 +16,9 @@ class SegmentController extends Controller
      */
     public function index()
     {
-        $articles = article::all();
+        $categories = categories::all();
 
-        return view('segments', ['segments' => $articles]);
+        return view('segments', ['categories' => $categories]);
     }
 
     /**
@@ -49,9 +50,28 @@ class SegmentController extends Controller
      */
     public function show($id)
     {
-        //
-    }
+        $categories = categories::where('id',$id)->first();
 
+
+        if(!$categories)
+        {
+            return redirect('segments/show');
+        }
+        return view('segments/show')->withcategories($categories);
+
+    }
+    public function articleshow($id)
+    {
+        $categories = categories::where('id',$id)->first();
+
+
+        if(!$categories)
+        {
+            return redirect('articles/show');
+        }
+        return view('articles/show')->withcategories($categories);
+
+    }
     /**
      * Show the form for editing the specified resource.
      *

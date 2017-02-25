@@ -9,12 +9,21 @@ class article extends Model
     /*shares with categories table*/
     public function categories()
     {
-        return $this->belongsToMany('App\Categories');
+        return $this->belongsToMany(categories::class);
     }
+
+    /*gives permissions to permission table*/
+    public function giveCategoryTo(categories $categories)
+    {
+        return $this->category->sync($categories);
+    }
+
+
+
     /*shares with comments table*/
     public function comments()
     {
-        return $this->belongsToMany('App\Response');
+        return $this->belongsToMany('App\comments');
     }
     /*shares with user table*/
     public function user()

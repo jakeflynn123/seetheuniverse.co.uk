@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Create Article')
+@section('title', 'Create a Article')
 @section('content')
     <!-----Breadcrumb header-------->
     <ol class="breadcrumb">

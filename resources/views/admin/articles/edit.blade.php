@@ -22,7 +22,7 @@
         </div>
     @endif
         <div class="container">
-    <!--------Form to edit a permission------>
+    <!--------Form to edit a article------>
     {!! Form::model($articles, ['method' => 'PATCH', 'url' => '/admin/articles/' . $articles->id]) !!}
 
     <div class="row col-lg-12 columns">
@@ -39,7 +39,7 @@
         {!! Form::label('categories', 'Category:') !!}
         @foreach($categories as $category)
             {{ Form::label($category->title) }}
-            {{ Form::select('category[]', $category->id, $articles->categories->contains($category->id), ['id' => $category->id]) }}
+            {{ Form::checkbox('category[]', $category->id, $articles->categories->contains($category->id), ['id' => $category->id]) }}
         @endforeach
 
     </div>

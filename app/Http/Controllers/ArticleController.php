@@ -40,17 +40,18 @@ class ArticleController extends Controller
         {
             return redirect('/admin/articles');
         }
-        return view('admin/articles/edit')->with('articles', $articles)->with('categories', $categories)->with('comments', $comments);
+        return view('admin/articles/edit')->with('articles', $articles)->with('categories', $categories);
     }
 
     public function update(Request $request, $id)
     {
         $articles = article::findOrFail($id);
+        $categories = $request->get('category');
 
-        $articles->categories()->sync($request->get('categories', []));
-        $articles->comments()->sync($request->get('comments', []));
+        $articles->categories()->sync($categories);
         return redirect('/admin/articles');
     }
+
     public function show($id)
     {
         $articles = article::where('id',$id)->first();

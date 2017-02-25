@@ -15,9 +15,9 @@
     <table class="table table-bordered">
         <thead>
         <tr>
-            <th>Permission Name</th>
-            <th>Permission Detail</th>
-            <th>Roles</th>
+            <th>Article Title</th>
+            <th>Article Content</th>
+            <th>Category</th>
             <th>Edit</th>
             <th>Delete</th>
         </tr>

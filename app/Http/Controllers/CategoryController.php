@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\categories;
+use App\article;
+use Gate;
 use Illuminate\Http\Request;
 
 class CategoryController extends Controller
@@ -11,9 +14,18 @@ class CategoryController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function index()
     {
-        //
+        if (Gate::allows('see_all_categories')) {
+            $categories = categories::all();
+
+            return view('admin/categories', ['categories' => $categories]);
+        }
+        return view('/adminpage');
     }
 
     /**
@@ -23,7 +35,13 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        //
+        if (Gate::allows('create_category')){
+
+            $categories = categories::all();
+
+            return view('admin/categories/create', ['categories' => $categories]);
+        }
+        return view('/adminpage');
     }
 
     /**
@@ -34,7 +52,16 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'title' => 'bail|required|unique:articles|min:3|max:255',
+            'content' => 'required',
+        ]);
+
+        $input = $request->all();
+
+        categories::create($input);
+
+        return redirect('/admin/categories');
     }
 
     /**
@@ -45,7 +72,14 @@ class CategoryController extends Controller
      */
     public function show($id)
     {
-        //
+        $categories = categories::where('id',$id)->first();
+
+
+        if(!$categories)
+        {
+            return redirect('/admin/categories');
+        }
+        return view('/admin/categories/show')->withcategories($categories);
     }
 
     /**
@@ -56,7 +90,14 @@ class CategoryController extends Controller
      */
     public function edit($id)
     {
-        //
+        $categories = categories::where('id',$id)->first();
+        $articles = article::all();
+
+        if(!$categories)
+        {
+            return redirect('/admin/categories');
+        }
+        return view('admin/categories/edit')->with('categories', $categories)->with('articles', $articles);
     }
 
     /**
@@ -68,7 +109,11 @@ class CategoryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $categories = categories::findOrFail($id);
+
+        $categories->articles()->sync($request->get('article', []));
+
+        return redirect('/admin/categories');
     }
 
     /**
@@ -79,6 +124,10 @@ class CategoryController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $categories = categories::findorFail($id);
+
+        $categories->delete();
+
+        return redirect('/admin/categories');
     }
 }

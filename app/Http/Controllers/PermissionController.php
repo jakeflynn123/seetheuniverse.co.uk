@@ -122,7 +122,6 @@ class PermissionController extends Controller
         $roles = $request->get('role');
 
         $permissions->roles()->sync($roles);
-
         return redirect('/admin/permissions');
     }
     /**
