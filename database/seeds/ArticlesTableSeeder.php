@@ -12,10 +12,10 @@ class ArticlesTableSeeder extends Seeder
     public function run()
     {
         DB::table('articles')->insert([
-            ['id' => 1, 'title' => 'New Article Name1', 'content' => 'article content goes here'],
-            ['id' => 2, 'title' => 'New Article Name2', 'content' => 'article content goes here'],
-            ['id' => 3, 'title' => 'New Article Name3', 'content' => 'article content goes here'],
-            ['id' => 4, 'title' => 'New Article Name4', 'content' => 'article content goes here'],
+            ['id' => 1, 'name' => 'New Article Name1', 'content' => 'article content goes here'],
+            ['id' => 2, 'name' => 'New Article Name2', 'content' => 'article content goes here'],
+            ['id' => 3, 'name' => 'New Article Name3', 'content' => 'article content goes here'],
+            ['id' => 4, 'name' => 'New Article Name4', 'content' => 'article content goes here'],
         ]);
     }
 }
