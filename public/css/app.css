@@ -8317,13 +8317,13 @@ button.close {
   }
 }
 
-#portfolio,
-#portfolio:hover {
-  color: white;
+#portfolio {
+  color: #f2f2f2;
 }
 
-input {
-  margin-top: 10px;
+#portfolio:hover {
+  color: #f2f2f2;
+  text-decoration: none;
 }
 
 a:hover {
@@ -8375,6 +8375,11 @@ body {
 .footer > .container {
   padding-right: 15px;
   padding-left: 15px;
+}
+
+#tc {
+  color: #f2f2f2;
+  text-align: center;
 }
 
 div.nudge {

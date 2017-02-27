@@ -5,16 +5,18 @@
 @import "variables";
 $colour: #c2f0f0;
 $fontcolour: #4d4d4d;
+$footerfont: #f2f2f2;
 
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
-#portfolio, #portfolio:hover {
-  color: white;
-
+#portfolio {
+  color: $footerfont;
 }
-input {
-  margin-top: 10px;
+#portfolio:hover {
+  color: $footerfont;
+  text-decoration: none;
+
 }
 
 a:hover {
@@ -53,7 +55,7 @@ body {
 
 .container .text-muted {
   margin: 20px 0;
-  color: #f2f2f2;
+  color: $footerfont;
   text-align: center;
 }
 .footer > .container {
@@ -62,7 +64,7 @@ body {
 }
 
 #tc {
-  color: #f2f2f2;
+  color: $footerfont;
   text-align: center;
 }
 
