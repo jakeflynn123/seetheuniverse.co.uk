@@ -6,7 +6,7 @@
     <!-----Breadcrumb header-------->
     <ol class="breadcrumb">
         <li><a href="/home">Home</a></li>
-        <li><a href="/admin/articles">articles</a></li>
+        <li><a href="/admin/articles">Articles</a></li>
         <li class="active"><a href="/admin/articles/{{ $articles->id }}">{{ $articles->title }}</a></li>
     </ol>
 

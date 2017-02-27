@@ -9,6 +9,13 @@ $fontcolour: #4d4d4d;
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
+#portfolio, #portfolio:hover {
+  color: white;
+
+}
+input {
+  margin-top: 10px;
+}
 
 a:hover {
   color: $fontcolour;
@@ -47,10 +54,16 @@ body {
 .container .text-muted {
   margin: 20px 0;
   color: #f2f2f2;
+  text-align: center;
 }
 .footer > .container {
   padding-right: 15px;
   padding-left: 15px;
+}
+
+#tc {
+  color: #f2f2f2;
+  text-align: center;
 }
 
 div.nudge{

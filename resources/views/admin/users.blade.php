@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Create Permission')
+@section('title', 'All Users')
 @section('content')
     <div class="container">
     <!-----Breadcrumb header-------->
