@@ -10,10 +10,10 @@
     </ol>
     <!-------Header with create button-------->
     <header class="row">
-        <div class="col-md-8">
+        <div class="col-lg-10">
             <h1>All Categories</h1>
         </div>
-        <div class="col-md-4">
+        <div class="col-lg-2">
             <a href="/admin/categories/create" class="btn btn-success buffer-top"> Create a Category</a>
         </div>
     </header>

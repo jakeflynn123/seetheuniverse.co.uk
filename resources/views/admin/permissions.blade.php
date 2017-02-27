@@ -10,10 +10,10 @@
     </ol>
     <!-------Header with create button-------->
     <header class="row">
-        <div class="col-md-8">
+        <div class="col-lg-10">
             <h1>All Permissions</h1>
         </div>
-        <div class="col-md-4 buffer-top">
+        <div class="col-lg-2 buffer-top">
             <a href="/admin/permissions/create" class="btn btn-success"> Create a Permission</a>
         </div>
     </header>
