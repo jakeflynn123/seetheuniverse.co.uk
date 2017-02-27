@@ -2,6 +2,7 @@
 
 @section('title', 'Create User')
 @section('content')
+    <div class="container">
     <!-----Breadcrumb header-------->
     <ol class="breadcrumb">
         <li><a href="/home">Home</a></li>
@@ -42,5 +43,6 @@
         {!! Form::submit('Add User', ['class' => 'btn btn-success']) !!}
     </div>
     {!! Form::close() !!}
+    </div>
 
 @endsection

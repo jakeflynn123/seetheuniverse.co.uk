@@ -2,6 +2,7 @@
 
 @section('title', 'Articles')
 @section('content')
+    <div class="container">
     <!-----Breadcrumb header-------->
     <ol class="breadcrumb">
         <li><a href="/home">Home</a></li>
@@ -48,4 +49,5 @@
             <p>no articles</p>
         @endif
     </section>
+    </div>
 @endsection

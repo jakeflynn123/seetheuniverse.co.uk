@@ -4,7 +4,7 @@
 @section('content')
   <div class="col-lg-12 noborder">
     <div class="col-lg-12 border">
-      <h1>Contact Us</h1>
+      <h1><u>Contact Us</u></h1>
     </div>
   </div>
 @endsection

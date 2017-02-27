@@ -8,7 +8,7 @@
             <section>
                 @if (isset ($categories->articles))
                     @foreach ($categories->articles as $article)
-                        <div class="col-lg-12 noborder">
+                        <div class="col-lg-3 noborder">
                             <div class="col-lg-12 border">
                                 <h1><a href="/articles/{{ $article->id }}" title="{{ $article->title }}">{{ $article->title }}</a></h1>
                                 <p>{{ $article->content }}</p>

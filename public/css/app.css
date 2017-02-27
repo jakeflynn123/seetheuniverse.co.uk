@@ -8317,6 +8317,11 @@ button.close {
   }
 }
 
+a:hover {
+  color: #4d4d4d;
+  text-decoration: none;
+}
+
 .containerarticle {
   background-color: white;
   border-radius: 3%;
@@ -8336,7 +8341,7 @@ html {
 }
 
 body {
-  font-family: Apple Chancery, cursive;
+  font-family: "Raleway", cursive, sans-serif;
   background-color: #c2f0f0;
   /* Margin bottom by footer height */
   margin-bottom: 100px;
@@ -8355,10 +8360,6 @@ body {
 .container .text-muted {
   margin: 20px 0;
   color: #f2f2f2;
-}
-
-.adminlink {
-  float: right;
 }
 
 .footer > .container {
@@ -8469,9 +8470,9 @@ h2 span {
 }
 
 .border {
-  border: 3px dashed #ddd;
+  border: 3px dashed #c2c2c2;
   border-radius: 5px;
-  box-shadow: 0 0 0 3px #fff, 0 0 0 5px #ddd, 0 0 0 10px #fff, 0 0 2px 10px #eee;
+  box-shadow: 0 0 0 3px #fff, 0 0 0 5px #c2c2c2, 0 0 0 10px #fff, 0 0 2px 10px #c2c2c2;
 }
 
 /*Hamburger Transition*/

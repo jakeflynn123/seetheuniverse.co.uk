@@ -2,6 +2,7 @@
 
 @section('title', 'Edit Permission')
 @section('content')
+    <div class="container">
     <!-----Breadcrumb header-------->
     <ol class="breadcrumb">
         <li><a href="/adminpage">Home</a></li>
@@ -47,4 +48,5 @@
     </div>
 
     {!! Form::close() !!}
+    </div>
 @endsection

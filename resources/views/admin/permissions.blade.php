@@ -2,6 +2,7 @@
 
 @section('title', 'Create Permission')
 @section('content')
+    <div class="container">
     <!-----Breadcrumb header-------->
     <ol class="breadcrumb">
         <li><a href="/home">Home</a></li>
@@ -36,4 +37,5 @@
                     <p>no permissions</p>
                 @endif</div>
     </section>
+    </div>
 @endsection

@@ -2,6 +2,7 @@
 
 @section('title', 'Create Role')
 @section('content')
+    <div class="container">
     <!-----Breadcrumb header-------->
     <ol class="breadcrumb">
         <li><a href="/adminpage">Home</a></li>
@@ -37,4 +38,5 @@
         {!! Form::submit('Add Role', ['class' => 'btn btn-success']) !!}
     </div>
     {!! Form::close() !!}
+    </div>
 @endsection
